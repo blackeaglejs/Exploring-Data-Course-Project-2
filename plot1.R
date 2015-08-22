@@ -1,5 +1,3 @@
-## Set working directory. 
-setwd("/Users/Zoheb2/dev/datasciencecoursera/Exploring-Data-Course-Project-2")
 ## Read in the Data
 NEI <- readRDS("summarySCC_PM25.rds")
 SCC <- readRDS("Source_Classification_Code.rds")
