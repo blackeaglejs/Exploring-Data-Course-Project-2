@@ -19,10 +19,6 @@ SCC_NEI_BC_LA_sum <- SCC_NEI_BC_LA %>%
       summarize(Emissions = sum(Emissions), na.rm = TRUE)
 
 ## Create a plot.
-qplot(year,Emissions,data=SCC_NEI_BC_LA_sum,
-      geom = c("point", "smooth"), method = "lm",
-      facets = fips ~ .)
-
 fips_names <- list('06037' = "Los Angeles County", '24510' ="Baltimore City")
 fips_labeller <- function(variable,value) {return(fips_names[value])}
 
