@@ -18,5 +18,6 @@ NEI_BC_sum <- NEI_BC %>%
 png(filename="plot3.png", width = 960, height = 480)
 qplot(year, Emissions, data = NEI_BC_sum, 
       facets = . ~ type, 
-      geom = c("point","smooth"))
+      geom = c("point","smooth"),
+      main = "Emissions by Year and Type, Baltimore City")
 dev.off()
